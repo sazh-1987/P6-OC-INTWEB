@@ -77,6 +77,8 @@ const afficherCategories = (categories) => {
     })
 }
 
+// Appel des fonctions pour récupérer et afficher les travaux et les catégories
 fetchData()
 fetchCategories()
+
 // fin étape 1.1 et 1.2 du projet

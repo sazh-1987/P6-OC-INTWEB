@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	line-height: 1;
 	background-color: #FFFEF8;
@@ -106,6 +110,10 @@ nav li {
 	font-family: 'Work Sans';
 }
 
+nav a {
+	color: #000000;
+}
+
 
 li:hover {
 	color: #B1663C;
@@ -146,7 +154,6 @@ li:hover {
 	margin-bottom: 1em;
 }
 
-/** début ajout CSS pour les filters *****************************************/
 .filters {
 	display: flex;
 	gap: 8px;
@@ -173,8 +180,6 @@ li:hover {
 background-color: #1D6154;
 color: #FFFFFF;
 }
-
-/**  fin ajout CSS pour les filters  *****************************************/
 
 .gallery {
 	width: 100%;
@@ -257,3 +262,57 @@ footer nav ul {
 	font-weight: 300;
 }
 
+/** ** ** ** début page login.html ** ** **  **/
+
+#login {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.login-connexion{
+	display: flex;
+	flex-direction: column;
+}
+
+#login h2 {
+	width: 100px;
+	height: 36px;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 100%;
+	letter-spacing: 0%;
+}
+
+.login-connexion {
+
+}
+
+#login label {
+	font-size: 14px;
+	padding: 1px 0;
+	font-weight: 500;
+	color: #3D3D3D;	
+	margin-top: 25px;
+}
+
+#login input[type = email], #login input[type = password] {
+	width: 379px;
+	height: 51px;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#login input[type = submit] {
+	border: none;
+	width: 179px;
+	height: 36px;
+}
+
+#login a {
+	text-decoration: underline;
+	color: #3D3D3D;
+}
+
+/**  ** ** ** fin page login.html  ** ** **  **/
