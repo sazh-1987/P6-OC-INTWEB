@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -350,23 +350,23 @@ header a {
 
 #editionBar {
 	width: 100%;
- 	height: 59px;
-  	background-color: black;
-  	top: 0;
-  	left: 0;
-  	right: 0;
-  	position: absolute;
+	height: 59px;
+	background-color: black;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
 
 .editionMode {
 	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	gap: 10px;
-  	margin-top: 23px;
-  	color: white;
-  	font-size: 16px;
-  	font-weight: 400;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 23px;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .editionMode i {
@@ -375,6 +375,10 @@ header a {
 	height: 15.58px;
 	background-color: black;
 	color: white;
+}
+
+.editionMode p {
+	cursor: pointer;
 }
 
 .portfolio {
@@ -405,6 +409,10 @@ header a {
 	cursor: pointer;
 }
 
+.portfolio p {
+	cursor: pointer;
+}
+
 .modal {
 	position: fixed;
 	height: 100vh;
@@ -416,21 +424,29 @@ header a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
+}
 
-  .portfolio h2 {
+.portfolio h2 {
 	margin: 125px 0;
-  }
+}
 
-  .modal-content {
+.modal-content {
 	width: 630px;
 	height: 688px;
 	border-radius: 10px;
 	opacity: 0px;
 	background-color: white;
-  }
+}
 
-  .modal-content h2 {
+.modal-line {
+	display: flex;
+	margin: 30px auto 0 auto;
+	width: 420px;
+	height: 0px;
+	border: 0.5px solid #B3B3B3;
+}
+
+.modal-content h2 {
 	color: black;
 	width: 173px;
 	height: 30px;
@@ -439,31 +455,8 @@ header a {
 	font-weight: 400;
 	line-height: 30.5px;
 	padding: 10px 0 0 225px;
-  }
-
-  .modal-line {
-	display: flex;
-	margin: 490px auto 0 auto;
-	width: 420px;
-	height: 0px;
-	border: 0.5px solid #B3B3B3;
-  }
-
-  .modal-content button {
-	width: 237px;
-	height: 36px;
-	border-radius: 60px;
-	border: 0 solid #1D6154;
-	opacity: 0px;
-	background-color: #1D6154;
-	color: white;
-	position: absolute;
-	top: 650px;
-	left: 600px;
-	cursor: pointer;
-  }
-
-  .close {
+}
+.close {
 	display: flex;
 	flex-direction: row;
 	font-size: 35px;
@@ -471,9 +464,40 @@ header a {
 	width: 24px;
 	height: 24px;
 	cursor: pointer;
-  }
+}
 
-  .fa-arrow-left {
+.divbutton{
+	display: flex;
+	justify-content: center;
+}
+
+.modal-content button {
+	width: 237px;
+	height: 36px;
+	border-radius: 60px;
+	border: 0 solid #1D6154;
+	opacity: 0px;
+	background-color: #1D6154;
+	color: white;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+
+.image-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	width: 460px;
+	max-height: 420px;
+	margin: 50px 0 0 100px;
+	gap: 8.5px;
+	overflow: auto;
+
+}
+.fa-arrow-left {
 	display: flex;
 	flex-direction: row;
 	font-size: 25px;
@@ -481,50 +505,41 @@ header a {
 	height: 24px;
 	margin: 30px -50px 0 25px;
 	cursor: pointer;
-  }
+}
 
-  .image-container {
+
+.image-container figure {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: left;
-	align-items: center;
-	width: 460px;
-	margin: -450px 0 0 100px;
-	gap: 8.5px;
-  }
+}
 
-  .image-container figure {
-	display: flex;
-  }
+.add-image {
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
 
-  .image-container img {
+.image-container img {
 	display: flex;
 	width: 76.61px;
 	height: 102.57px;
 	margin-bottom: 20px;
 	gap: 10px;
-  }
+}
 
-  .add-image {
-	height: 100%;
-	object-fit: contain;
-	object-position: center;
-  }
 
-  .display-none {
+.display-none {
 	display: none;
-  }
+}
 
-  .display-block {
+.display-block {
 	display: block;
-  }
+}
 
-  .modal-figure {
+.modal-figure {
 	position: relative;
-  }
+}
 
-  .carre-noir {
+.carre-noir {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -537,18 +552,24 @@ header a {
 	border-radius: 2px;
 	position: absolute;
 	cursor: pointer;
-  }
+}
 
-  .fa-trash-can {
+.fa-trash-can {
 	color: white;
-  }
+}
 
- .banniere-modal2 {
+.banniere-modal2 {
 	display: flex;
 	flex-direction: row;
- }
+}
+.div-formulaire-modal {
+	display: flex;
+	width: 418px;
+	height: 200px;
+	margin-left: 100px;
+}
 
-  .h2-modal2 {
+.h2-modal2 {
 	display: flex;
 	font-family: Work Sans;
 	font-size: 26px;
@@ -556,16 +577,10 @@ header a {
 	line-height: 30.5px;
 	text-align: center;
 	align-self: center;
-  }
+}
 
-  .div-formulaire-modal {
-	display: flex;
-	width: 418px;
-	height: 200px;
-	margin-left: 100px;
-  }
 
-  .div-formulaire-modal label {
+.div-formulaire-modal label {
 	width: 32px;
 	height: 16px;
 	font-family: Work Sans;
@@ -573,20 +588,20 @@ header a {
 	font-weight: 500;
 	line-height: 16.42px;
 	text-align: left;
-  }
+}
 
-  .image-ajouter-photo {
+.image-ajouter-photo {
 	display: flex;
 	flex-direction: column;
 	width: 420px;
 	height: 169px;
 	border-radius: 3px;
 	background-color: #E8F1F6;
-	margin: -450px 0 35px 100px;
+	margin: 0px 0 35px 100px;
 	z-index: 1;
-  }
+}
 
-  .fa-image {
+.fa-image {
 	display: flex;
 	margin: 7.5px 0 0 170px;
 	width: 76px;
@@ -594,9 +609,9 @@ header a {
 	padding: 9.5px 3.93px 6.88px 3.93px;
 	color: #B9C5CC;
 	font-size: 74px;
-  }
+}
 
-  .bouton-ajout-photo {
+.bouton-ajout-photo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -613,14 +628,14 @@ header a {
 	color: #306685;
 	font-weight: bold;
 	margin: 0 auto;
-  }
+}
 
-  .image-ajouter-photo input {
+.image-ajouter-photo input {
 	display: none;
 	opacity: 0;
-  }
+}
 
-  .image-ajouter-photo p {
+.image-ajouter-photo p {
 	width: 94px;
 	height: 12px;
 	opacity: 0px;
@@ -630,15 +645,15 @@ header a {
 	line-height: 11.73px;
 	text-align: center;
 	margin: 5px auto 0;
-  }
+}
 
-  .div-formulaire-modal form {
+.div-formulaire-modal form {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-  }
+}
 
-  .div-formulaire-modal input {
+.div-formulaire-modal input {
 	width: 402px;
 	height: 51px;
 	margin-bottom: 25px;
@@ -651,9 +666,9 @@ header a {
 	color: #444444;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-  }
+}
 
-  .div-formulaire-modal select {
+.div-formulaire-modal select {
 	width: 418px;
 	height: 51px;
 	font-family: Work Sans;
@@ -665,12 +680,9 @@ header a {
 	color: #444444;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-  }
+}
 
-  .image-ajouter-photo button {
-	width: 237px;
-	height: 36px;
-	border-radius: 60px;
+.image-ajouter-photo button {
 	opacity: 0px;
 	background-color: #A7A7A7;
 	font-family: Syne;
@@ -678,4 +690,4 @@ header a {
 	font-weight: 700;
 	line-height: 16.8px;
 	text-align: center;
-  }
+}
